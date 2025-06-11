@@ -1,0 +1,10 @@
+body {
+    background-image: white url("images/IMG_5075.jpg") no-repeat;
+}
+li a {
+    color: green !important;
+}
+
+h1 {
+    color: green !important;
+}
