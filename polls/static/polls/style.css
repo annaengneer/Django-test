@@ -1,6 +1,8 @@
 body {
-    background-image: white url("images/IMG_5075.jpg") no-repeat;
+    background: white url("./images/IMG_5075.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
+
 li a {
     color: green !important;
 }

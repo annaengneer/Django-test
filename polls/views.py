@@ -16,9 +16,8 @@ class IndexView(generic.ListView):
         """
         Return the last five published questions(not including those set to be publish in the future).
         """
-        qs = Question.objects.filter(pub_date__lte=timezone.now()).order_by("-pub_date")[:5]
-        for q in qs:
-            print("DYBUG:", q.id, q.question_text)
+        return Question.objects.filter(pub_date__lte=timezone.now()).order_by("-pub_date")[:5]
+        
         
         # return Question.objects.filter(pub_date__lte=timezone.now()).order_by("-pub_date")[:5]
     
